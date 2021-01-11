@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB381B2E259B4AB4002E277D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB381B2D259B4AB4002E277D /* GameKit.framework */; };
+		EBC34F9F2200736E0061F3CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34F9E2200736E0061F3CF /* AppDelegate.swift */; };
+		EBC34FAA2200736E0061F3CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FA82200736E0061F3CF /* Main.storyboard */; };
+		EBC34FAC220073710061F3CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FAB220073710061F3CF /* Assets.xcassets */; };
+		EBC34FAF220073710061F3CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FAD220073710061F3CF /* LaunchScreen.storyboard */; };
+		EBC34FBA220073710061F3CF /* dietmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FB9220073710061F3CF /* dietmanTests.swift */; };
+		EBC34FC5220073710061F3CF /* dietmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FC4220073710061F3CF /* dietmanUITests.swift */; };
+		EBC34FD3220073A00061F3CF /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FD2220073A00061F3CF /* player.swift */; };
+		EBC34FD5220073A60061F3CF /* draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FD4220073A60061F3CF /* draw.swift */; };
+		EBC34FD7220073AA0061F3CF /* object.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FD6220073AA0061F3CF /* object.swift */; };
+		EBC34FD9220073B00061F3CF /* GameTitle.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FD8220073B00061F3CF /* GameTitle.sks */; };
+		EBC34FDB220073B60061F3CF /* GameTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FDA220073B60061F3CF /* GameTitle.swift */; };
+		EBC34FDD220073BC0061F3CF /* Howto.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FDC220073BC0061F3CF /* Howto.sks */; };
+		EBC34FDF220073C00061F3CF /* Howto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FDE220073C00061F3CF /* Howto.swift */; };
+		EBC34FE1220073C60061F3CF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FE0220073C50061F3CF /* GameScene.sks */; };
+		EBC34FE3220073CA0061F3CF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FE2220073CA0061F3CF /* GameScene.swift */; };
+		EBC34FE5220073D00061F3CF /* GameResult.sks in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FE4220073D00061F3CF /* GameResult.sks */; };
+		EBC34FE7220073D50061F3CF /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FE6220073D50061F3CF /* GameResult.swift */; };
+		EBC34FE9220073D90061F3CF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC34FE8220073D90061F3CF /* GameViewController.swift */; };
+		EBC34FEB220073DD0061F3CF /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FEA220073DD0061F3CF /* success.mp3 */; };
+		EBC34FED220073E10061F3CF /* select04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBC34FEC220073E10061F3CF /* select04.mp3 */; };
+		EBF2BF3F22056F5B00E573A7 /* nc155023.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBF2BF3E22056F5B00E573A7 /* nc155023.mp3 */; };
+		EBF2BF4122056F8500E573A7 /* nc147497.wav in Resources */ = {isa = PBXBuildFile; fileRef = EBF2BF4022056F8500E573A7 /* nc147497.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBC34FB6220073710061F3CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC34F932200736E0061F3CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBC34F9A2200736E0061F3CF;
+			remoteInfo = dietman;
+		};
+		EBC34FC1220073710061F3CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC34F932200736E0061F3CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBC34F9A2200736E0061F3CF;
+			remoteInfo = dietman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB381B2D259B4AB4002E277D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		EBC34F9B2200736E0061F3CF /* dietman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dietman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC34F9E2200736E0061F3CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBC34FA92200736E0061F3CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBC34FAB220073710061F3CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBC34FAE220073710061F3CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBC34FB0220073710061F3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC34FB5220073710061F3CF /* dietmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dietmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC34FB9220073710061F3CF /* dietmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dietmanTests.swift; sourceTree = "<group>"; };
+		EBC34FBB220073710061F3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC34FC0220073710061F3CF /* dietmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dietmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC34FC4220073710061F3CF /* dietmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dietmanUITests.swift; sourceTree = "<group>"; };
+		EBC34FC6220073710061F3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC34FD2220073A00061F3CF /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		EBC34FD4220073A60061F3CF /* draw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = draw.swift; sourceTree = "<group>"; };
+		EBC34FD6220073AA0061F3CF /* object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = object.swift; sourceTree = "<group>"; };
+		EBC34FD8220073B00061F3CF /* GameTitle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameTitle.sks; sourceTree = "<group>"; };
+		EBC34FDA220073B60061F3CF /* GameTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTitle.swift; sourceTree = "<group>"; };
+		EBC34FDC220073BC0061F3CF /* Howto.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Howto.sks; sourceTree = "<group>"; };
+		EBC34FDE220073C00061F3CF /* Howto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Howto.swift; sourceTree = "<group>"; };
+		EBC34FE0220073C50061F3CF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		EBC34FE2220073CA0061F3CF /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EBC34FE4220073D00061F3CF /* GameResult.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameResult.sks; sourceTree = "<group>"; };
+		EBC34FE6220073D50061F3CF /* GameResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
+		EBC34FE8220073D90061F3CF /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EBC34FEA220073DD0061F3CF /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		EBC34FEC220073E10061F3CF /* select04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = select04.mp3; sourceTree = "<group>"; };
+		EBF2BF3E22056F5B00E573A7 /* nc155023.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nc155023.mp3; sourceTree = "<group>"; };
+		EBF2BF4022056F8500E573A7 /* nc147497.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nc147497.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBC34F982200736E0061F3CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB381B2E259B4AB4002E277D /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC34FB2220073710061F3CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC34FBD220073710061F3CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB381B2C259B4AB4002E277D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB381B2D259B4AB4002E277D /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBC34F922200736E0061F3CF = {
+			isa = PBXGroup;
+			children = (
+				EBC34F9D2200736E0061F3CF /* dietman */,
+				EBC34FB8220073710061F3CF /* dietmanTests */,
+				EBC34FC3220073710061F3CF /* dietmanUITests */,
+				EBC34F9C2200736E0061F3CF /* Products */,
+				EB381B2C259B4AB4002E277D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBC34F9C2200736E0061F3CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBC34F9B2200736E0061F3CF /* dietman.app */,
+				EBC34FB5220073710061F3CF /* dietmanTests.xctest */,
+				EBC34FC0220073710061F3CF /* dietmanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBC34F9D2200736E0061F3CF /* dietman */ = {
+			isa = PBXGroup;
+			children = (
+				EBC34F9E2200736E0061F3CF /* AppDelegate.swift */,
+				EBC34FD2220073A00061F3CF /* player.swift */,
+				EBC34FD4220073A60061F3CF /* draw.swift */,
+				EBC34FD6220073AA0061F3CF /* object.swift */,
+				EBC34FD8220073B00061F3CF /* GameTitle.sks */,
+				EBC34FDA220073B60061F3CF /* GameTitle.swift */,
+				EBC34FDC220073BC0061F3CF /* Howto.sks */,
+				EBC34FDE220073C00061F3CF /* Howto.swift */,
+				EBC34FE0220073C50061F3CF /* GameScene.sks */,
+				EBC34FE2220073CA0061F3CF /* GameScene.swift */,
+				EBC34FE4220073D00061F3CF /* GameResult.sks */,
+				EBC34FE6220073D50061F3CF /* GameResult.swift */,
+				EBC34FE8220073D90061F3CF /* GameViewController.swift */,
+				EBC34FEA220073DD0061F3CF /* success.mp3 */,
+				EBC34FEC220073E10061F3CF /* select04.mp3 */,
+				EBF2BF4022056F8500E573A7 /* nc147497.wav */,
+				EBF2BF3E22056F5B00E573A7 /* nc155023.mp3 */,
+				EBC34FA82200736E0061F3CF /* Main.storyboard */,
+				EBC34FAB220073710061F3CF /* Assets.xcassets */,
+				EBC34FAD220073710061F3CF /* LaunchScreen.storyboard */,
+				EBC34FB0220073710061F3CF /* Info.plist */,
+			);
+			path = dietman;
+			sourceTree = "<group>";
+		};
+		EBC34FB8220073710061F3CF /* dietmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBC34FB9220073710061F3CF /* dietmanTests.swift */,
+				EBC34FBB220073710061F3CF /* Info.plist */,
+			);
+			path = dietmanTests;
+			sourceTree = "<group>";
+		};
+		EBC34FC3220073710061F3CF /* dietmanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBC34FC4220073710061F3CF /* dietmanUITests.swift */,
+				EBC34FC6220073710061F3CF /* Info.plist */,
+			);
+			path = dietmanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBC34F9A2200736E0061F3CF /* dietman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC34FC9220073710061F3CF /* Build configuration list for PBXNativeTarget "dietman" */;
+			buildPhases = (
+				EBC34F972200736E0061F3CF /* Sources */,
+				EBC34F982200736E0061F3CF /* Frameworks */,
+				EBC34F992200736E0061F3CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dietman;
+			productName = dietman;
+			productReference = EBC34F9B2200736E0061F3CF /* dietman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBC34FB4220073710061F3CF /* dietmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC34FCC220073710061F3CF /* Build configuration list for PBXNativeTarget "dietmanTests" */;
+			buildPhases = (
+				EBC34FB1220073710061F3CF /* Sources */,
+				EBC34FB2220073710061F3CF /* Frameworks */,
+				EBC34FB3220073710061F3CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBC34FB7220073710061F3CF /* PBXTargetDependency */,
+			);
+			name = dietmanTests;
+			productName = dietmanTests;
+			productReference = EBC34FB5220073710061F3CF /* dietmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBC34FBF220073710061F3CF /* dietmanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC34FCF220073710061F3CF /* Build configuration list for PBXNativeTarget "dietmanUITests" */;
+			buildPhases = (
+				EBC34FBC220073710061F3CF /* Sources */,
+				EBC34FBD220073710061F3CF /* Frameworks */,
+				EBC34FBE220073710061F3CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBC34FC2220073710061F3CF /* PBXTargetDependency */,
+			);
+			name = dietmanUITests;
+			productName = dietmanUITests;
+			productReference = EBC34FC0220073710061F3CF /* dietmanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBC34F932200736E0061F3CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					EBC34F9A2200736E0061F3CF = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+					EBC34FB4220073710061F3CF = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = EBC34F9A2200736E0061F3CF;
+					};
+					EBC34FBF220073710061F3CF = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = EBC34F9A2200736E0061F3CF;
+					};
+				};
+			};
+			buildConfigurationList = EBC34F962200736E0061F3CF /* Build configuration list for PBXProject "dietman" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBC34F922200736E0061F3CF;
+			productRefGroup = EBC34F9C2200736E0061F3CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBC34F9A2200736E0061F3CF /* dietman */,
+				EBC34FB4220073710061F3CF /* dietmanTests */,
+				EBC34FBF220073710061F3CF /* dietmanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBC34F992200736E0061F3CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC34FED220073E10061F3CF /* select04.mp3 in Resources */,
+				EBF2BF4122056F8500E573A7 /* nc147497.wav in Resources */,
+				EBC34FD9220073B00061F3CF /* GameTitle.sks in Resources */,
+				EBC34FAA2200736E0061F3CF /* Main.storyboard in Resources */,
+				EBF2BF3F22056F5B00E573A7 /* nc155023.mp3 in Resources */,
+				EBC34FEB220073DD0061F3CF /* success.mp3 in Resources */,
+				EBC34FAC220073710061F3CF /* Assets.xcassets in Resources */,
+				EBC34FDD220073BC0061F3CF /* Howto.sks in Resources */,
+				EBC34FE1220073C60061F3CF /* GameScene.sks in Resources */,
+				EBC34FAF220073710061F3CF /* LaunchScreen.storyboard in Resources */,
+				EBC34FE5220073D00061F3CF /* GameResult.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC34FB3220073710061F3CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC34FBE220073710061F3CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBC34F972200736E0061F3CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC34FDB220073B60061F3CF /* GameTitle.swift in Sources */,
+				EBC34FDF220073C00061F3CF /* Howto.swift in Sources */,
+				EBC34FD5220073A60061F3CF /* draw.swift in Sources */,
+				EBC34FD3220073A00061F3CF /* player.swift in Sources */,
+				EBC34FE9220073D90061F3CF /* GameViewController.swift in Sources */,
+				EBC34FE7220073D50061F3CF /* GameResult.swift in Sources */,
+				EBC34FD7220073AA0061F3CF /* object.swift in Sources */,
+				EBC34FE3220073CA0061F3CF /* GameScene.swift in Sources */,
+				EBC34F9F2200736E0061F3CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC34FB1220073710061F3CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC34FBA220073710061F3CF /* dietmanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC34FBC220073710061F3CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC34FC5220073710061F3CF /* dietmanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBC34FB7220073710061F3CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBC34F9A2200736E0061F3CF /* dietman */;
+			targetProxy = EBC34FB6220073710061F3CF /* PBXContainerItemProxy */;
+		};
+		EBC34FC2220073710061F3CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBC34F9A2200736E0061F3CF /* dietman */;
+			targetProxy = EBC34FC1220073710061F3CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBC34FA82200736E0061F3CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBC34FA92200736E0061F3CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBC34FAD220073710061F3CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBC34FAE220073710061F3CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBC34FC7220073710061F3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBC34FC8220073710061F3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBC34FCA220073710061F3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H43S77F72;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = dietman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-nakataseijiinikoniko2001.dietman";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBC34FCB220073710061F3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H43S77F72;
+				INFOPLIST_FILE = dietman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-nakataseijiinikoniko2001.dietman";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBC34FCD220073710061F3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JW65S9HL97;
+				INFOPLIST_FILE = dietmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-nakataseiji2001.dietmanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dietman.app/dietman";
+			};
+			name = Debug;
+		};
+		EBC34FCE220073710061F3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JW65S9HL97;
+				INFOPLIST_FILE = dietmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-nakataseiji2001.dietmanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dietman.app/dietman";
+			};
+			name = Release;
+		};
+		EBC34FD0220073710061F3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JW65S9HL97;
+				INFOPLIST_FILE = dietmanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-nakataseiji2001.dietmanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dietman;
+			};
+			name = Debug;
+		};
+		EBC34FD1220073710061F3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JW65S9HL97;
+				INFOPLIST_FILE = dietmanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-nakataseiji2001.dietmanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dietman;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBC34F962200736E0061F3CF /* Build configuration list for PBXProject "dietman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC34FC7220073710061F3CF /* Debug */,
+				EBC34FC8220073710061F3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC34FC9220073710061F3CF /* Build configuration list for PBXNativeTarget "dietman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC34FCA220073710061F3CF /* Debug */,
+				EBC34FCB220073710061F3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC34FCC220073710061F3CF /* Build configuration list for PBXNativeTarget "dietmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC34FCD220073710061F3CF /* Debug */,
+				EBC34FCE220073710061F3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC34FCF220073710061F3CF /* Build configuration list for PBXNativeTarget "dietmanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC34FD0220073710061F3CF /* Debug */,
+				EBC34FD1220073710061F3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBC34F932200736E0061F3CF /* Project object */;
+}
